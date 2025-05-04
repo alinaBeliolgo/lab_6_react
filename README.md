@@ -13,8 +13,7 @@
 npm install @reduxjs/toolkit react-redux
 ```
 
-
-- store.js
+### store.js
 1. Настроен Redux Store с использованием configureStore.
 2. Подключен редюсер корзины (cartReducer) и RTK Query API (productsApi).
 3. Реализованы функции для сохранения (saveState) и загрузки (loadState) состояния корзины в/из localStorage.
@@ -23,7 +22,7 @@ npm install @reduxjs/toolkit react-redux
 
 
 
-- slice.js
+### slice.js
 1. Создан срез состояния корзины с начальными значениями (items, totalQuantity).
 2. Реализованы действия:
 
@@ -36,7 +35,7 @@ npm install @reduxjs/toolkit react-redux
 
 
 
-- actions.js
+### actions.js
 1. Добавлены селекторы для работы с состоянием корзины:
 
 ![alt text](image-4.png)
@@ -47,7 +46,7 @@ npm install @reduxjs/toolkit react-redux
 
 
 
-- CartPage.jsx
+### CartPage.jsx
 1. Отображение списка товаров в корзине.
 2. Реализованы функции:
  - Удаление товара из корзины (removeFromCart).
@@ -56,7 +55,7 @@ npm install @reduxjs/toolkit react-redux
 
 
 
-- Header.jsx
+### Header.jsx
 
 ![alt text](image-3.png)
 1. Добавлено отображение общего количества товаров в корзине с использованием селектора selectCartItemsCount.
